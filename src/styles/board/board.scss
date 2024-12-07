@@ -1,0 +1,13 @@
+@use '../colors.scss' as colors;
+@use '../fonts.scss' as font;
+@use '../utilities.scss' as util;
+@import '../reset.scss';
+
+.board-container {
+    max-width: 70rem;
+    max-height: 11rem;
+    width: 100vw !important;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}

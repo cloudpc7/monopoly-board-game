@@ -1,0 +1,20 @@
+@use 'sass:math';
+
+$color-theme: (
+    white: #fff,
+    black: #050505,
+    tealGreen: #CDE6D0,
+    red: #ED1B24,
+    orange: #F7941D,
+    brown: #955436,
+    blue: #AEE0FA,
+    purple: #D93A96,
+    yellow: #FEF200,
+    green: #1FB25A,
+    dark-blue: #0072BB,
+
+);
+
+@function colorTheme($key) {
+    @return map-get($color-theme, $key);
+}

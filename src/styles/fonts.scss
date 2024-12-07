@@ -1,0 +1,80 @@
+@use 'sass:math';
+@use 'sass:color';
+@use './colors.scss' as colors;
+@import url("https://use.typekit.net/utk5fzb.css");
+@import url("https://use.typekit.net/utk5fzb.css");
+@import url("https://use.typekit.net/utk5fzb.css");
+
+//Font Family
+
+$fontTitle: "neue-kabel" sans-serif;
+$fontCard: "copperplate", serif;
+$fontFamily: "futura-pt", sans-serif;
+
+$font-themes: (
+    default: (
+        font-family: $fontFamily,
+        font-weight: 400,
+        color: colors.colorTheme(black),
+    ),
+    title: (
+        font-family: $fontFamily,
+        font-weight: 700,
+        letter-spacing: 0.1rem,
+        line-height: 100%,
+        color: colors.colorTheme(white),
+    ),
+    card: (
+        font-family: $fontCard,
+        font-weight: 600,
+        color: colors.colorTheme(black),
+    )
+);
+
+@mixin font-theme($theme-name) {
+    $theme: map-get($font-themes, $theme-name);
+    
+    @if $theme {
+      font-family: map-get($theme, font-family);
+      font-weight: map-get($theme, font-weight);
+      line-height: map-get($theme, line-height);
+      letter-spacing: map-get($theme, letter-spacing);
+      color: map-get($theme, color);
+    } @else {
+        @error "No font theme found for `#{$theme-name}`";
+      }
+  }
+
+// Font Sizes
+
+$title-font: (
+    xs: 2rem,
+    sm: 2.5rem,
+    md: 3rem,
+    lg: 4rem,
+    xl: 4.5rem,
+);
+
+@function title-font($breakpoint) {
+    @return map-get($title-font, $breakpoint);
+}
+
+$font-sizes: (
+    xs: 0.0875rem,
+    md: 1rem,
+    lg: 1.125rem,
+);
+
+@function font-size($breakpoint) {
+    @return map-get($font-sizes, $breakpoint);
+}
+
+$card-titles: (
+    xs: 1rem,
+    md: 1.125rem,
+    lg: 1.25rem,
+);
+
+@function card-title($breakpoint) {
+    @return map-get($font-sizes, $breakpoint);
+}

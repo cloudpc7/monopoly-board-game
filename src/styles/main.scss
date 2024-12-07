@@ -1,0 +1,29 @@
+// main.scss
+@use './colors.scss' as colors;
+@use './fonts.scss' as font;
+@use './utilities.scss' as util;
+@import './reset.scss';
+
+body {
+    box-sizing: border-box !important;
+    display: flex;
+    justify-content: center;
+    width: 100vw !important;
+    height: 100vh !important;
+    @include font.font-theme(default);
+    .h1,.h5,p {
+        @include util.margin(default);
+    }
+
+    .h1, .h2 {
+        @include font.font-theme(title);
+    }
+    .container {
+        display: grid !important;
+        margin: 0;
+        padding: 0;
+        .card {
+            display: grid;
+        }
+    }
+}
