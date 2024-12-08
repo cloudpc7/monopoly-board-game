@@ -5,7 +5,7 @@
                 "id": "generate-unique-id-here",
                 "space": 1,
                 "name": "collect $200.00 salary as you pass",
-                "img": "/images/goicon.png",
+                "img": "images/goicon.png",
                 "collect": 200
             },
             {
