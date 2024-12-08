@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<div allign="center">
+    <img src="/src/assets/images/monopoly-board-game.png" width="1200" height="400" alt="monopoly board game">
+    [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/paul-cloud-760358338)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/cloudpc7)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Monopoly Board Game
 
-## Available Scripts
+## Built With
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![React Bootstrap](https://img.shields.io/badge/-React%20Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
 
-In the project directory, you can run:
+# Hello, I have create a similar replica of the classic monopoly board game.
+The application is currently using react, react-bootstrap, reactstrap, and sass.
 
-### `npm start`
+### My choice for creating this project
+My kids enjoy playing monopoly and I decided to use that as a learning tool to create a fun and exciting game and use what I have learned as well as developer a
+game and extend my knowledge.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### About the project
+I created the project back in 2021.
+As I have learned more and am applying my skills to do more projects and aquire a job in web development.
+I restructrued the components. Used less code. Applied my knowledge about sass and react towards rebuilding this game.
 
-### `npm test`
+## Currently the game is not mobile responsive and is structured towards a minimum screen. 
+I am continuing this project and will work on functionality as I go. Though this is a fun game. I
+do believe that keeping it on a desktop platform is better at the moment.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Difficulties
+The hardest thing about coding and styling was getting the cards and the grid placement correctly.
 
-### `npm run build`
+### Whats Next
+Next is working on starting the game.
+creating a button to start the play.
+Creating dice.
+A instructional modal that pops up before the game starts.
+Providing pieces to the board.
+I will be using react-spring in order to flip the cards over and provide an option to buy based 
+on the original rules.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Future goals
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+My goal for this in the future is for people to be able to play with several players.
+Also adding functionality like more libraries of different styles and pieces and themes. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</div>

@@ -1,13 +1,288 @@
-@use '../colors.scss' as colors;
-@use '../fonts.scss' as font;
-@use '../utilities.scss' as util;
-@import '../reset.scss';
+@use '../colors.scss' as colors;  
+@use '../fonts.scss' as font;  
+@use '../utilities.scss' as util;  
+@import '../reset.scss';  
+  
+.board-container {  
+    display: grid;  
+    background-color: colors.colorTheme(tealGreen);
+    padding: 0;
+    margin-top: 1rem;
+    max-width: 54rem;
+    max-height: 54rem;
+    min-width: 54rem;
+    min-height: 54rem;
+    .game-board {  
+        display: grid;
+        grid-template-columns: repeat(11, auto);
+        grid-template-rows: repeat(11, auto);
+        text-transform: uppercase;
+        margin: 0; 
+        padding: 0;
+        gap: 0;  
+        @mixin board-piece-styles($start-index, $start-row, $start-column, $rotation, $count, $row-increment, $column-increment) {
+            @for $i from 1 through $count {
+              .board-piece:nth-child(#{$start-index + $i - 1}) { 
+                grid-row: #{$start-row + ($i - 1) * $row-increment};
+                grid-column: #{$start-column + ($i - 1) * $column-increment};
+                transform: rotate($rotation);
+              }
+            }
+          }
 
-.board-container {
-    max-width: 70rem;
-    max-height: 11rem;
-    width: 100vw !important;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-}
+        @include board-piece-styles(1, 11, 1,90deg ,11 , -1, 0);
+        @include board-piece-styles(12,1,2,180deg,9,0,1);
+        @include board-piece-styles(22,2,11,-90deg,10,1,0);
+        @include board-piece-styles(32,11,10,0deg,9,0,-1);
+
+        #space-1 {
+            position: relative;
+            .space-title {
+                position: absolute;
+                top: 14px;
+                left: -10px;
+                transform: rotate(-35deg);
+                padding: 0.5rem;
+                font-weight: 600;
+            }
+
+            .space-image {
+                position: absolute;
+                top: 45px;
+                left: 35px;
+                transform: rotate(-35deg);
+            }
+        }
+
+        #space-11 {
+            position: relative;
+            .just {
+                position: absolute;
+                top: 2rem;
+                left: 0.1rem;
+                transform: rotate(90deg);
+            }
+
+            .visiting {
+                position: absolute;
+                top: 4.25rem;
+            }
+
+            .border-box {
+                position: absolute;
+                top: 0;
+                left: 15px;
+                width: 4rem;
+                height: 4rem;
+
+                
+
+                .space-image {
+                    min-width: 2.5rem;
+                    min-height: 2.5rem;
+                    transform: rotate(45deg);
+                    padding: 0;
+                    border: none;
+                    border-radius: 0;
+                }
+            }
+        }
+
+        #space-21 {
+            transform: rotate(180deg);
+            position: relative;
+            .free {
+                position: absolute;
+                top: 15px;
+                left: 50px;
+                transform: rotate(45deg);
+                font-weight: 600;
+            }
+
+            .parking {
+                position: absolute;
+                top: 48px;
+                transform: rotate(45deg);
+                left: 12px;
+                font-weight: 600;
+
+            }
+
+            .space-image {
+                position: absolute;
+                transform: rotate(85deg);
+                top: 20px;
+                padding: 0;
+                min-width: 2.5rem;
+                min-height: 2.5rem;
+            }
+        }
+
+        #space-31 {
+            position: relative;
+            .go-to {
+                position: absolute;
+                transform: rotate(40deg);
+                top: 8px;
+                left: 3.25rem;
+                font-weight: 600;
+            }
+
+            .space-image {
+                position: absolute;
+                left: 1.75rem;
+                transform: rotate(45deg);
+                min-width: 2.5rem;
+                min-height: 2.5rem;
+            }
+
+            .jail {
+                position: absolute;
+                transform: rotate(40deg);
+                top: 3.5rem;
+                left: 12px;
+                font-weight: 600;
+            }
+        }
+
+        .board-piece {
+            display: grid;
+            border: 1px solid black; 
+            background-color: colors.colorTheme(tealGreen);  
+            max-width: 4.999rem;
+            min-width: 4.999rem;
+            max-height: 4.999rem;
+            min-height: 4.999rem;
+            width: 100%;
+            height: 100%;
+            border-radius: 0; 
+            margin: 0;
+            padding: 0;  
+            text-align: center; 
+            .space-color {
+                height: 1rem;
+            }
+
+            .space-title {
+                font-size: 8px;
+                padding: 0 0.75rem;
+                line-height: 1.2;
+                align-self: center;
+                justify-self: center;
+                font-weight: 700;
+            }
+        
+            .space-image { 
+                max-width: 2rem;
+                max-height: 2rem;
+               align-self: center;
+               justify-self: center;
+            }  
+        
+            .border-box { 
+                display: grid; 
+                background-color: colors.colorTheme(orange);     
+            }  
+        
+            .board-content {  
+                display: grid;
+                padding: 0;
+                font-size: 12px;
+                align-items: flex-end;
+                margin-bottom: 0.25rem;
+                font-size: 12px;
+                font-weight: 500;
+            }  
+        }  
+    }  
+  
+    .center-board { 
+        display: grid;
+        grid-template-rows: repeat(9,1fr);
+        grid-template-columns: repeat(9,auto);
+        grid-row: 2 / 10;
+        grid-column: 2 / 11;
+        padding: 0;  
+        margin: 0;
+
+        .chest-card {
+            display: grid;
+            grid-column: 8;
+            grid-row: 2;
+            transform: rotate(45deg);
+            align-self: center;
+            justify-self: center;
+            background-color: colors.colorTheme(blue);
+            width: 6rem;
+            height: 4rem;
+            border: 3px solid #fff;
+
+            .chest {
+                align-self: center;
+                justify-self: center;
+                max-width: 3rem;
+                max-height: 3rem;
+                transform: rotate(180deg);
+            }
+        }
+
+        .chance-card {
+            display: grid;
+            grid-row: 9;
+            grid-column: 3;
+            transform: rotate(45deg);
+            align-self: center;
+            justify-self: center;
+            background-color: colors.colorTheme(orange);
+            width: 6rem;
+            height: 4rem;
+            border: 3px solid #fff;
+            .chance {
+                align-self: center;
+                justify-self: center;
+                max-width: 3rem;
+                max-height: 3rem;
+            }
+        }
+
+        .monopoly-man { 
+            max-width: 4rem;  
+            max-height: 4rem;
+        }   
+        
+        .center-piece {  
+            position: relative;  
+            grid-column: 4 / 7;
+            grid-row: 6 / 7;
+            transform: rotate(45deg);
+            align-self: center;
+            .game-description { 
+                position: absolute;
+                top: -0.75rem; 
+                font-size: 10px;
+                font-weight: 700;  
+            }  
+    
+            .monopoly-man {  
+                position: absolute; 
+                top: -3.65rem;
+                left: 11rem;
+                z-index: 10;  
+            }  
+    
+            .game-title { 
+                border: 1.2px solid colors.colorTheme(black);  
+                background-color: red;  
+                font-size: 2rem;  
+                font-weight: 700;  
+                color: white;  
+                text-align: center;  
+                z-index: 11;  
+                letter-spacing: 0.2rem;  
+                box-shadow: inset 0px 2px 8px rgba(0,0,0,0.5),  
+                inset 0 -2px 8px rgba(0,0,0,0.5); 
+                padding: 1rem;  
+            }  
+        }  
+    }  
+}  

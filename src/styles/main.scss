@@ -5,25 +5,16 @@
 @import './reset.scss';
 
 body {
-    box-sizing: border-box !important;
-    display: flex;
-    justify-content: center;
-    width: 100vw !important;
-    height: 100vh !important;
+    display: grid;
+    .container {
+        display: grid;
+    }
     @include font.font-theme(default);
-    .h1,.h5,p {
+    .h1,.h5, p, .card-title{
         @include util.margin(default);
     }
 
     .h1, .h2 {
         @include font.font-theme(title);
-    }
-    .container {
-        display: grid !important;
-        margin: 0;
-        padding: 0;
-        .card {
-            display: grid;
-        }
     }
 }

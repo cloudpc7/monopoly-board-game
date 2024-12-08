@@ -1,0 +1,71 @@
+@import url("https://use.typekit.net/utk5fzb.css");
+@import url("https://use.typekit.net/utk5fzb.css");
+@import url("https://use.typekit.net/utk5fzb.css");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  display: grid;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  color: #050505;
+}
+body .container {
+  display: grid;
+}
+body .h1, body .h5, body p, body .card-title {
+  margin: 0;
+}
+body .h1, body .h2 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

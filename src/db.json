@@ -4,7 +4,7 @@
             {
                 "id": "generate-unique-id-here",
                 "space": 1,
-                "name": "GO",
+                "name": "collect $200.00 salary as you pass",
                 "img": "/images/goicon.png",
                 "collect": 200
             },
@@ -115,7 +115,7 @@
             {
                 "id": "generate-unique-id-here",
                 "space": 11,
-                "name": "IN JAIL",
+                "name": "just visiting",
                 "img": "/images/jailicon.png",
                 "inJail": false,
                 "justVisiting": true
@@ -409,7 +409,7 @@
             {
                 "id": "generate-unique-id-here",
                 "space": 37,
-                "name": "Chance3",
+                "name": "Chance",
                 "img": "/images/chance3.png"
             },
             {

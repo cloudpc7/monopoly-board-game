@@ -3,7 +3,7 @@ import Board from '../components/Board';
 import '../styles/board/board.scss';
 const GameBoard = () => {
     return (
-        <Container  className="board-container">
+        <Container className="board-container">
                 <Board />
         </Container>
     )
