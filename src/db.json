@@ -27,7 +27,7 @@
                 "id": "generate-unique-id-here",
                 "space": 3,
                 "name": "Community Chest",
-                "img": "/images/communitychest.png"
+                "img": "images/communitychest.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -54,7 +54,7 @@
                 "id": "generate-unique-id-here",
                 "space": 6,
                 "name": "Reading RailRoad",
-                "img": "/images/railroad.png",
+                "img": "images/railroad.png",
                 "value": 200,
                 "mortgage": 100,
                 "unMortgage": 110,
@@ -80,7 +80,7 @@
                 "id": "generate-unique-id-here",
                 "space": 8,
                 "name": "Chance",
-                "img": "/images/chance.png"
+                "img": "images/chance.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -116,7 +116,7 @@
                 "id": "generate-unique-id-here",
                 "space": 11,
                 "name": "just visiting",
-                "img": "/images/jailicon.png",
+                "img": "images/jailicon.png",
                 "inJail": false,
                 "justVisiting": true
             },
@@ -139,7 +139,7 @@
                 "id": "generate-unique-id-here",
                 "space": 13,
                 "name": "Electric Company",
-                "img": "/images/electric.png",
+                "img": "images/electric.png",
                 "value": 150,
                 "mortgage": 75,
                 "unMortgage": 83,
@@ -180,7 +180,7 @@
                 "id": "generate-unique-id-here",
                 "space": 16,
                 "name": "Pennsylvania Railroad",
-                "img": "/images/railroad.png",
+                "img": "images/railroad.png",
                 "value": 200,
                 "mortgage": 100,
                 "unMortgage": 110,
@@ -204,7 +204,7 @@
                 "id": "generate-unique-id-here",
                 "space": 18,
                 "name": "Community Chest",
-                "img": "/images/communitychest.png"
+                "img": "images/communitychest.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -236,7 +236,7 @@
                 "id": "generate-unique-id-here",
                 "space": 21,
                 "name": "Free Parking",
-                "img": "/images/freeparking.png"
+                "img": "images/freeparking.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -255,7 +255,7 @@
                 "id": "generate-unique-id-here",
                 "space": 23,
                 "name": "Chance",
-                "img": "/images/chance2.png"
+                "img": "images/chance2.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -287,7 +287,7 @@
                 "id": "generate-unique-id-here",
                 "space": 26,
                 "name": "B&B RailRoad",
-                "img": "/images/railroad.png",
+                "img": "images/railroad.png",
                 "value": 200,
                 "mortgage": 100,
                 "unMortgage": 110,
@@ -324,7 +324,7 @@
                 "id": "generate-unique-id-here",
                 "space": 29,
                 "name": "Water Works",
-                "img": "/images/water.png",
+                "img": "images/water.png",
                 "value": 150,
                 "mortgage": 75,
                 "unMortgage": 83,
@@ -348,7 +348,7 @@
                 "id": "generate-unique-id-here",
                 "space": 31,
                 "name": "Go To Jail",
-                "img": "/images/gotojail.png"
+                "img": "images/gotojail.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -380,7 +380,7 @@
                 "id": "generate-unique-id-here",
                 "space": 34,
                 "name": "Community Chest",
-                "img": "/images/communitychest.png"
+                "img": "images/communitychest.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -399,7 +399,7 @@
                 "id": "generate-unique-id-here",
                 "space": 36,
                 "name": "ShortLine RailRoad",
-                "img": "/images/railroad.png",
+                "img": "images/railroad.png",
                 "value": 200,
                 "mortgage": 100,
                 "unMortgage": 110,
@@ -410,7 +410,7 @@
                 "id": "generate-unique-id-here",
                 "space": 37,
                 "name": "Chance",
-                "img": "/images/chance3.png"
+                "img": "images/chance3.png"
             },
             {
                 "id": "generate-unique-id-here",
@@ -429,7 +429,7 @@
                 "id": "generate-unique-id-here",
                 "space": 39,
                 "name": "Luxury Tax",
-                "img": "/images/luxurytax.png",
+                "img": "images/luxurytax.png",
                 "Pay": 100
             },
             {
